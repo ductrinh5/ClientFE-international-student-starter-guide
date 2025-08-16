@@ -88,6 +88,10 @@ function LoginForm({ isOpen, onClose }) {
                                         <input type="text" className="form-control" name="lastname" required />
                                     </div>
                                     <div className="form-group col-12">
+                                        <label>Nationality*</label>
+                                        <input type="text" className="form-control" name="nationality" required />
+                                    </div>
+                                    <div className="form-group col-12">
                                         <label>Your email*</label>
                                         <input type="email" className="form-control" name="new_email" required />
                                     </div>

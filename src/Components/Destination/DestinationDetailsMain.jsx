@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Posts from '../data/data-destination.json';
 import Modal from '../Gallery/Modal';
 import ContactMap from '../Contact/ContactMap';
+import SaveButton from '../SaveButton/SaveButton';
 
 function DestinationDetailsMain() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,7 +44,14 @@ function DestinationDetailsMain() {
                       <span>4.8</span>
                     </span>
                   </div>
-                  <h2 className="box-title">{destinationPost.title}</h2>
+                  <div className="destination-header">
+                    <h2 className="box-title">{destinationPost.title}</h2>
+                    <SaveButton 
+                      destinationId={destinationPost.id}
+                      destinationTitle={destinationPost.title}
+                      className="save-btn-lg"
+                    />
+                  </div>
                   <p className="blog-text mb-35">
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis et

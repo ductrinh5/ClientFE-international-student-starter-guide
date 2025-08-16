@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import SaveButton from '../SaveButton/SaveButton';
 
 function DestinationCard(props) {
     const { destinationID, destinationImage, destinationTitle, destinationPrice } = props;
@@ -41,9 +42,16 @@ function DestinationCard(props) {
                         <span>
                             <i className="fa-light fa-clock" />7 Days
                         </span>
-                        <Link to={`/destination/${destinationID}`} className="th-btn style4 th-icon">
-                            See Details
-                        </Link>
+                        <div className="action-buttons">
+                            <SaveButton 
+                                destinationId={destinationID}
+                                destinationTitle={destinationTitle}
+                                className="save-btn-sm"
+                            />
+                            <Link to={`/destination/${destinationID}`} className="th-btn style4 th-icon">
+                                See Details
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

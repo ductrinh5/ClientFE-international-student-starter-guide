@@ -10,6 +10,8 @@ import Blog from './Blog'
 import BlogDetails from './BlogDetails'
 import Contact from './Contact'
 import AIChat from './AIChat'
+import Dashboard from './Dashboard'
+
 function RouterPage() {
   return (
     <div>
@@ -25,6 +27,7 @@ function RouterPage() {
           <Route path="/blog/:id" element={<BlogDetails />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/ai-chat" element={<AIChat />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
         </Routes>
       </Router>
     </div>

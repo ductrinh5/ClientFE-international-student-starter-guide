@@ -1,0 +1,101 @@
+/* Save Button Styles */
+.save-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 2px solid #cc2c2c;
+    background: white;
+    color: #cc2c2c;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.save-btn:hover {
+    background: #cc2c2c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(204, 44, 44, 0.3);
+}
+
+.save-btn.saved {
+    background: #cc2c2c;
+    color: white;
+}
+
+.save-btn.saved:hover {
+    background: #981515;
+    border-color: #981515;
+}
+
+.save-btn i {
+    font-size: 1rem;
+}
+
+.save-btn-sm {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+}
+
+.save-btn-lg {
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Destination Header */
+.destination-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.destination-header .box-title {
+    margin: 0;
+    flex: 1;
+}
+
+/* Blog Header */
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-header .blog-title {
+    margin: 0;
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .destination-header,
+    .blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .save-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

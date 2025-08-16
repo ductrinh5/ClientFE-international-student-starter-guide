@@ -110,6 +110,9 @@ function HeaderOne() {
                       <li>
                         <Link to="/contact">Contact us</Link>
                       </li>
+                      <li>
+                        <Link to="/dashboard">My Dashboard</Link>
+                      </li>
                     </ul>
                   </nav>
                   <button

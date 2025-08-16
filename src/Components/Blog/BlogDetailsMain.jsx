@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 import Posts from '../data/data-post.json';
+import SaveButton from '../SaveButton/SaveButton';
 
 function BlogDetailsMain() {
     const { id } = useParams();
@@ -33,9 +34,16 @@ function BlogDetailsMain() {
                                         Visa
                                     </Link>
                                 </div>
-                                <h2 className="blog-title">
-                                    Guide for visa application
-                                </h2>
+                                <div className="blog-header">
+                                    <h2 className="blog-title">
+                                        Guide for visa application
+                                    </h2>
+                                    <SaveButton 
+                                        destinationId={blogPost.id}
+                                        destinationTitle="Guide for visa application"
+                                        className="save-btn-lg"
+                                    />
+                                </div>
                                 <p className="blog-text mb-30">
                                     This guide will help you understand the process of applying for a visa to Vietnam.
                                 </p>
